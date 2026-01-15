@@ -12,12 +12,14 @@ header-includes:
   \sisetup{range-phrase = {-}, range-units = single}
   \DeclareMathOperator{\tr}{tr}
   \usepackage{hyperref}
+  \usepackage{url}
   \titlegraphic{
     \vspace{4ex}
 	\includegraphics[width=2cm]{by-sa.pdf}\\[1ex]
     \footnotesize
     Except where otherwise noted, this document and its content are licensed under the\\
-    \href{https://creativecommons.org/licenses/by-sa/4.0/legalcode.en}{Creative Commons Attribution-ShareAlike 4.0 International license}.
+    \href{https://creativecommons.org/licenses/by-sa/4.0/legalcode.en}{Creative Commons Attribution-ShareAlike 4.0 International license}.\\[.5\baselineskip]
+	All sources and vector graphics are available on the GitHub repository \href{https://github.com/reincas/AWO_course}{\texttt{\url{https://github.com/reincas/AWO_course}}}.
   }
   \makeatletter
   \renewcommand{\@makecaption}[2]{}
