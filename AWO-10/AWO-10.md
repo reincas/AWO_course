@@ -69,7 +69,7 @@ One is the **spontaneous emission** of a photon:
 
 The variation rate of the lower state 1 is proportional only to the population density $N_2$ of the excited state:
 $$
-\frac{dN_1}{dt} = A_{12} N_2
+\frac{dN_1}{dt} = A_{21} N_2
 $$
 with the Einstein coefficient for spontaneous emission $A_{21}$.
 Since there is no dependency on the photon density, this this transition is not seen as inverse of the absorption process.
