@@ -1,7 +1,7 @@
 ---
 title: "Applied Wave Optics: Mode Decomposition"
 author: "Reinhard Caspary"
-date: "Version date: December 16, 2025"
+date: "Version date: May 20, 2026"
 header-includes:
 - |
   ```{=latex}
@@ -60,8 +60,8 @@ $$
 An arbitrary transversal field $\mathbf{E}_t$ can be uniquely expressed as a linear combination of modes:
 $$
 \mathbf{E}_t(x,y,z)
-= \sum\limits_m a_m(z)\, \hat{\mathbf{E}}_{tm}(x,y) 
-+ \int\! a(\mu, z)\, \hat{\mathbf{E}}_t(\mu, x, y) d\mu
+= \sum\limits_m a_m\, \hat{\mathbf{E}}_{tm}(x,y)\, e^{i\beta_m z} 
++ \int\! a(\mu)\, \hat{\mathbf{E}}_t(\mu, x, y)\, e^{i\beta(\mu) z} d\mu
 $$
 with weight factors $a_m$ for discrete guided modes and the weight spectrum $a(\mu)$ for continuous unguided modes. The mode number $m$ is actually a tuple of integers in case of two-dimensional waveguides and the continuous mode number $\mu$ covers the whole range of wave vectors leading to normal reflection at one interface at least. The weight factors are given by
 $$
@@ -79,8 +79,8 @@ Every mode comes in two flavours: A forward propagating wave with **positive** m
 
 The magnitude of the weight factors is the same for the expansion of electric and magnetic fields. Only the sign for backward propagating magnetic modes is flipped:
 \begin{align*}
-\mathbf{E}_t(x,y,z) &= \sum_{m>0} \left[a_m(z) + a_{-m}(z)\right] \hat{\mathbf{E}}_{tm} (x,y) \\
-\mathbf{H}_t(x,y,z) &= \sum_{m>0} \left[a_m(z) - a_{-m}(z)\right] \hat{\mathbf{H}}_{tm} (x,y)
+\mathbf{E}_t(x,y) &= \sum_{m>0} \left[a_m + a_{-m}\right] \hat{\mathbf{E}}_{tm} (x,y) \\
+\mathbf{H}_t(x,y) &= \sum_{m>0} \left[a_m - a_{-m}\right] \hat{\mathbf{H}}_{tm} (x,y)
 \end{align*}
 **Note:** Each mode travels with a different speed, the total field shape is no constant.
 
