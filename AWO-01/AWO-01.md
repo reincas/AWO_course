@@ -1,7 +1,7 @@
 ---
 title: "Applied Wave Optics: Maxwell Equations"
 author: "Reinhard Caspary"
-date: "Version date: November 27, 2025"
+date: "Version date: May 20, 2026"
 header-includes:
 - |
   ```{=latex}
@@ -153,7 +153,7 @@ $$
 $$
 Now we insert Faraday's law on the left and on the right the scalar triple products extract the field components parallel to the interface:
 $$
--i\omega \lim_{A \to 0} \int\limits_A \mathbf{B}\ d\mathbf{A}
+-\lim_{A \to 0} \frac{\partial}{\partial t} \int\limits_A \mathbf{B}\ d\mathbf{A}
 = \lim_{\Delta h, \Delta\ell \to 0}
 \left[-\int\limits_1^2\! E_{1\parallel}\ dx
 + \int\limits_3^4\! E_{2\parallel}\ dx \right]
